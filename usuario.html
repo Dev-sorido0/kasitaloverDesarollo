@@ -1,0 +1,55 @@
+<style>
+    h2 {
+        text-align: center;
+        color: #333;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        margin: auto;
+    }
+
+    form label {
+        font-weight: bold;
+        margin: 10px 0 5px 0;
+    }
+
+    form input,
+    form textarea,
+    form select {
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        outline: none;
+    }
+
+    form button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 20px;
+    }
+
+    form button:hover {
+        background-color: #45a049;
+    }
+</style>
+
+<h2>Crear usuario</h2>
+<form action="agregarUsuario.php" method="post">
+
+    <label for="usernameUsuario">Username:</label>
+    <input type="text" id="usernameUsuario" name="usernameUsuario" required>
+
+    <label for="passwordUsuario">Password:</label>
+    <input type="text" id="passwordUsuario" name="passwordUsuario" required>
+
+
+    <button type="submit" name="agregarUsuario">Crear usuario</button>
+
+</form>
