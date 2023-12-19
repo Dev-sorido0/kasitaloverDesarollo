@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Kasita Lovers</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="contenedor">
+        <header class="header">
+            <div class="logo">
+                <p>La <span>sorido0</span></p>
+            </div>
+            <div class="hamburguesa">
+                <img src="Imagenes/menu.png" alt="Menu hamburguesa">
+            </div>
+            <nav class="menu">
+                <ul class="navegacion">
+                    <li><a href="index.html" target="_blank">INICIO</a></li>
+                    <li><a href="https://www.ubereats.com/do/store/la-kasita-churchill/DfPFZaQuQHujZasXx2w5cA"
+                            target="_blank">MENU</a></li>
+                    <li><a href="#" target="_blank">SOBRE NOSOTROS</a></li>
+                    <li><a href="ubica.html" target="_blank">UBICACIONES</a></li>
+                    <li><a href="#" target="_blank">APPS </a></li>
+                    <li><a href="#" target="_blank">CONTACTOS</a></li>
+                    <li><a href="#" target="_blank">INSTAGRAM</a></li>
+                </ul>
+            </nav>
+        </header>
+        <aside class="presentacion">
+            <div class="informacion">
+                <h1>Ordena tu Combito Preferido de la Kasita</h1>
+                <div>
+                    <p>Somos la Kasita lover ordena tu combo o tu Oferta preferidad,</p>
+                    <p>tambien puedes ordenar por uber eat, didi food y pedidos YA,</p>
+                    <p>tenemos las mejores ofertas.</p>
+                </div>
+                <div class="informacion--boton">
+                    <button type="button" onclick="cambiarColorTarjeta()">ORDENA TU COMIDA</button>
+                </div>
+                <div class="informacion--boton">
+                    <div class="card" id="miCard" style="width: 18rem; display: none;">
+                        <div class="card-body">
+                            <h5 class="card-title" id="micontent">Comida en proceso.......</h5>
+                            <h6 class="card-subtitle mb-2 text-body-secondary" id="micontent2">Su comida esta siendo
+                                procesada, en el restaurante</h6>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="presentacion--imagen">
+                <img src="Imagenes/design.png" alt="Imagen presentacion">
+            </div>
+        </aside>
+        <main class="comida">
+            <h2 class="comida--titulo">Platos Populares</h2>
+            <div class="platos">
+                <article class="plato">
+                    <img src="https://images.deliveryhero.io/image/pedidosya/products/38612077-5ddbbd02-4dd2-4fdf-b933-ffe3cbaecf6d.jpeg?quality=90&width=1152&webp=1"
+                        alt="Hamburguesa">
+                    <h1>Gringuito + Papa Suprema</h1>
+                    <div class="plato--info">
+                        <p>$580.00</p>
+                        <button type="button">+</button>
+                    </div>
+                </article>
+                <article class="plato">
+                    <img src="https://images.deliveryhero.io/image/pedidosya/products/40057530-2bda4963-b904-4715-988f-977abd8a93e2.jpeg?quality=90&width=1152&webp=1"
+                        alt="Pollo frito">
+                    <h1>Bendecida + Papa Suprema</h1>
+
+                    <div class="plato--info">
+                        <p>$400.00</p>
+                        <button type="button">+</button>
+                    </div>
+                </article>
+                <article class="plato">
+                    <img src="https://images.deliveryhero.io/image/pedidosya/products/11515056-004bb9dc-fe5a-4670-b8db-27c9133c9fa4.jpeg?quality=90&width=1152&webp=1"
+                        alt="Papas fritas">
+                    <h1>Hamburguesa + BBQ</h1>
+                    <div class="plato--info">
+                        <p>$500.00</p>
+                        <button type="button">+</button>
+                    </div>
+                </article>
+                <article class="plato">
+                    <img src="https://images.deliveryhero.io/image/pedidosya/products/58ef6afa-c4d2-475d-9ea7-2af0a14b82ed.jpg?quality=90&height=96&width=96&webp=1"
+                        alt="Hamburguesa XL">
+                    <h1>Hamburguesa Italo</h1>
+                    <div class="plato--info">
+                        <p>$600.00</p>
+                        <button type="button">+</button>
+                    </div>
+                </article>
+            </div>
+
+        </main>
+        <main class="comida">
+            <h2 class="comida--titulo">Bebidas</h2>
+            <div class="platos">
+                <article class="plato">
+                    <img src="Imagenes/DASANI.png" alt="agua dasani">
+                    <h1>Agua Dasani</h1>
+                    <div class="plato--info">
+                        <p>$700.00</p>
+                        <button type="button">+</button>
+                    </div>
+                </article>
+                <article class="plato">
+                    <img src="Imagenes/Planeta.jpg" alt="Agua Planeta">
+                    <h1>Agua Planeta Azul</h1>
+                    <div class="plato--info">
+                        <p>$800.00</p>
+                        <button type="button">+</button>
+                    </div>
+                </article>
+                <article class="plato">
+                    <img src="Imagenes/coca cola.jpg" alt="coca cola">
+                    <h1>Coca cola</h1>
+
+                    <div class="plato--info">
+                        <p>$900.00</p>
+                        <button type="button">+</button>
+                    </div>
+                </article>
+                <article class="plato">
+                    <img src="Imagenes/jugo naranja.png" alt="jugo naranja">
+                    <h1>Jugo 100% Rica Naranja</h1>
+
+                    <div class="plato--info">
+                        <p>$1000.00</p>
+                        <button type="button">+</button>
+                    </div>
+                </article>
+            </div>
+
+        </main>
+        </main>
+        <main class="comida">
+            <h2 class="comida--titulo">Postres</h2>
+            <div class="platos">
+                <article class="plato">
+                    <img src="Imagenes/CHOCOYFRESA.jpg" alt="agua dasani">
+                    <h1>Chocolate con Fresa</h1>
+                    <div class="plato--info">
+                        <p>$500.00</p>
+                        <button type="button">+</button>
+                    </div>
+                </article>
+                <article class="plato">
+                    <img src="Imagenes/browni.jpg" alt="Agua Planeta">
+                    <h1>Browni de Chocolate</h1>
+
+                    <div class="plato--info">
+                        <p>$600.00</p>
+                        <button type="button">+</button>
+                    </div>
+                </article>
+                <article class="plato">
+                    <img src="Imagenes/FLANS.jpg" alt="coca cola">
+                    <h1>Flan con Leche y Chocolate</h1>
+
+                    <div class="plato--info">
+                        <p>$700.00</p>
+                        <button type="button">+</button>
+                    </div>
+                </article>
+                <article class="plato">
+                    <img src="Imagenes/paletas.jpg" alt="jugo naranja">
+                    <h1>Paletas con Chispas de Frutas</h1>
+
+                    <div class="plato--info">
+                        <p>$800.00</p>
+                        <button type="button">+</button>
+                    </div>
+                </article>
+            </div>
+
+        </main>
+    </div>
+    </div>
+    <footer class="footer">
+        <div class="wrap-footer">
+            <div class="text-element-footer element-footer">
+                <h3>Restaurante LA KASITA LOVERS</h3>
+                <p>Tenemos dos restaurantes nuestra kasita principal en la churchill y cinema center nos puede visitar
+                    donde prefieras.</p>
+            </div>
+            <div class="text-element-footer element-footer">
+                <h5>Dirección</h5>
+                <ul>
+                    <li>Calle, Churchill</li>
+                    <li>Linconl - 1212</li>
+                    <li>Movil: (+1)809-999-0222</li>
+                </ul>
+            </div>
+            <div class="text-element-footer element-footer">
+                <h5>Más información</h5>
+                <ul>
+                    <li><a href="#">INICIO</a></li>
+                    <li><a href="#">MENU</a></li>
+                    <li><a href="#">SOBRE NOSOTROS</a></li>
+                    <li><a href="#">UBICACIONES</a></li>
+                    <li><a href="#">APPS</a></li>
+                    <li><a href="#">CONTACTOS</a></li>
+                    <li><a href="#">INSTAGRAM</a></li>
+
+                </ul>
+            </div>
+            <div class="rrss-element-footer element-footer">
+                <h5>Redes Sociales</h5>
+                <ul>
+                    <li><a href="#">
+                            <img src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJtNTEyIDc1djM2MmMwIDQxLjM5ODQzOC0zMy42MDE1NjIgNzUtNzUgNzVoLTEyMWwtMzAtMzBoLTMwbC0zMCAzMGgtMTUxYy00MS4zOTg0MzggMC03NS0zMy42MDE1NjItNzUtNzV2LTM2MmMwLTQxLjM5ODQzOCAzMy42MDE1NjItNzUgNzUtNzVoMzYyYzQxLjM5ODQzOCAwIDc1IDMzLjYwMTU2MiA3NSA3NXptMCAwIiBmaWxsPSIjNzk4NGViIi8+PHBhdGggZD0ibTUxMiA3NXYzNjJjMCA0MS4zOTg0MzgtMzMuNjAxNTYyIDc1LTc1IDc1aC0xMjFsLTMwLTMwaC0xNXYtNDgyaDE2NmM0MS4zOTg0MzggMCA3NSAzMy42MDE1NjIgNzUgNzV6bTAgMCIgZmlsbD0iIzQ2NjFkMSIvPjxwYXRoIGQ9Im0zMTYgMTgwdjYwaDkwbC0xNSA5MGgtNzV2MTgyaC05MHYtMTgyaC02MHYtOTBoNjB2LTYwYzAtMzMuMzAwNzgxIDE4LjMwMDc4MS02Mi40MDIzNDQgNDUtNzggMTMuMTk5MjE5LTcuNSAyOC44MDA3ODEtMTIgNDUtMTJoOTB2OTB6bTAgMCIgZmlsbD0iI2VjZWNmMSIvPjxwYXRoIGQ9Im0zMTYgMTgwdjYwaDkwbC0xNSA5MGgtNzV2MTgyaC00NXYtNDEwYzEzLjE5OTIxOS03LjUgMjguODAwNzgxLTEyIDQ1LTEyaDkwdjkwem0wIDAiIGZpbGw9IiNlMmUyZTciLz48L3N2Zz4="
+                                alt="icono redes sociales">
+                        </a></li>
+                    <li><a href="#">
+                            <img src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIC0zMSA1MTIgNTEyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Im0yMTEgMjcwLTQwLjkxNzk2OSA0My42NzU3ODEgMTAuOTE3OTY5IDc2LjMyNDIxOSAxMjAtOTB6bTAgMCIgZmlsbD0iIzAwYzBmMSIvPjxwYXRoIGQ9Im0wIDE4MCAxMjEgNjAgOTAgMzAgMjEwIDE4MCA5MS00NTB6bTAgMCIgZmlsbD0iIzc2ZTJmOCIvPjxwYXRoIGQ9Im0xMjEgMjQwIDYwIDE1MCAzMC0xMjAgMjEwLTE4MHptMCAwIiBmaWxsPSIjMjVkOWY4Ii8+PC9zdmc+"
+                                alt="icono redes sociales">
+                        </a></li>
+                    <li><a href="#">
+                            <img src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJtMjU2IDBjLTE0MC42OTkyMTkgMC0yNTYgMTE1LjMwMDc4MS0yNTYgMjU2IDAgNDYuNSAxMi41OTc2NTYgOTEuNSAzNi4zMDA3ODEgMTMxLjEwMTU2MmwtMzYuMzAwNzgxIDEyNC44OTg0MzggMTI0Ljg5ODQzOC0zNi4zMDA3ODFjMzkuNjAxNTYyIDIzLjY5OTIxOSA4NC42MDE1NjIgMzYuMzAwNzgxIDEzMS4xMDE1NjIgMzYuMzAwNzgxIDE0MC42OTkyMTkgMCAyNTYtMTE1LjMwMDc4MSAyNTYtMjU2cy0xMTUuMzAwNzgxLTI1Ni0yNTYtMjU2em0wIDAiIGZpbGw9IiMwMGRkN2IiLz48cGF0aCBkPSJtNTEyIDI1NmMwIDE0MC42OTkyMTktMTE1LjMwMDc4MSAyNTYtMjU2IDI1NnYtNTEyYzE0MC42OTkyMTkgMCAyNTYgMTE1LjMwMDc4MSAyNTYgMjU2em0wIDAiIGZpbGw9IiMwMGNjNzEiLz48cGF0aCBkPSJtNDE3LjE5OTIxOSAzNjQuMzAwNzgxLTEyIDExLjY5OTIxOWMtMTYuODAwNzgxIDE2LjgwMDc4MS01NS44MDA3ODEgMTUuNTk3NjU2LTgwLjY5OTIxOSAxMC44MDA3ODEtMjIuMTk5MjE5LTQuMTk5MjE5LTQ2LTE0LjEwMTU2Mi02OC41LTI3LjkwMjM0My02MS4xOTkyMTktMzcuMTk5MjE5LTExNi42OTkyMTktMTAzLjE5OTIxOS0xMzAuMTk5MjE5LTE2Mi41OTc2NTctOS4zMDA3ODEtNDAuMjAzMTI1LTQuMTk5MjE5LTc1IDktODguNWwxMi0xMmM2LjYwMTU2My02LjMwMDc4MSAxNy4wOTc2NTctNi4zMDA3ODEgMjMuNjk5MjE5IDBsNDcuNjk5MjE5IDQ3LjY5OTIxOWMzLjMwMDc4MSAzLjMwMDc4MSA1LjEwMTU2MiA3LjUgNS4xMDE1NjIgMTJzLTEuODAwNzgxIDguNjk5MjE5LTUuMTAxNTYyIDEybC0xMiAxMS42OTkyMTljLTEyLjg5ODQzOCAxMy4xOTkyMTktMTIuODk4NDM4IDM0LjUgMCA0Ny42OTkyMTlsNDkuODAwNzgxIDQ4LjkwMjM0MyAyOS4wOTc2NTYgMjguODAwNzgxYzEzLjIwMzEyNSAxMy4xOTkyMTkgMzUuNTAzOTA2IDEzLjE5OTIxOSA0OC43MDMxMjUgMGwxMS42OTkyMTktMTIuMDAzOTA2YzYuMzAwNzgxLTYgMTcuNjk5MjE5LTYgMjQgMGw0Ny42OTkyMTkgNDcuNzAzMTI1YzYuMzAwNzgxIDYuNTk3NjU3IDYuNjAxNTYyIDE3LjA5NzY1NyAwIDI0em0wIDAiIGZpbGw9IiNlY2VjZjEiLz48cGF0aCBkPSJtNDE3LjE5OTIxOSAzNjQuMzAwNzgxLTEyIDExLjY5OTIxOWMtMTYuODAwNzgxIDE2LjgwMDc4MS01NS44MDA3ODEgMTUuNTk3NjU2LTgwLjY5OTIxOSAxMC44MDA3ODEtMjIuMTk5MjE5LTQuMTk5MjE5LTQ2LTE0LjEwMTU2Mi02OC41LTI3LjkwMjM0M3YtODMuMDk3NjU3bDI5LjA5NzY1NiAyOC44MDA3ODFjMTMuMjAzMTI1IDEzLjE5OTIxOSAzNS41MDM5MDYgMTMuMTk5MjE5IDQ4LjcwMzEyNSAwbDExLjY5OTIxOS0xMi4wMDM5MDZjNi4zMDA3ODEtNiAxNy42OTkyMTktNiAyNCAwbDQ3LjY5OTIxOSA0Ny43MDMxMjVjNi4zMDA3ODEgNi41OTc2NTcgNi42MDE1NjIgMTcuMDk3NjU3IDAgMjR6bTAgMCIgZmlsbD0iI2UyZTJlNyIvPjwvc3ZnPg=="
+                                alt="icono redes sociales">
+                        </a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-creds">
+            <div class="copy-creds">
+                <p>©2023 · Derechos reservados Por LA KASITA LOVERS.</p>
+            </div>
+            <div class="legal-creds">
+                <ul>
+                    <li><a href="#">Política de Privacidad</a></li>
+                    <li><a href="#">Plítica de Cookies</a></li>
+                    <li><a href="#">Aviso Legal</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="../Proyecto-5-CapiDev-main/JS/index.js"></script>
+</body>
+
+</html>
